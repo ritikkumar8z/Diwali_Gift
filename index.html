@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Diwali</title>
+  <style>
+    
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-image: url('https://media1.tenor.com/m/KnBw9MOLreAAAAAd/happy-new-year-fireworks.gif');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: #f0e68c; /* Warm gold text color */
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+    }
+    h1 {
+      font-size: 4em;
+      text-align: center;
+      color: #FFDD44; /* Bright gold for main heading */
+      text-shadow: 2px 2px 5px #FF8800;
+    }
+
+    p {
+      font-size: 1.5em;
+      color: #FFC107; /* Soft gold for blessings */
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .firework {
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      background-color: transparent;
+      box-shadow: 0 0 10px 3px #FF8800, 0 0 30px 15px #FF5E00;
+      border-radius: 50%;
+      animation: fall linear forwards;
+    }
+
+    @keyframes fall {
+      from {
+        top: -50px;
+        opacity: 1;
+      }
+      to {
+        top: 100vh;
+        opacity: 0;
+      }
+    }
+
+    @keyframes burst {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(0.1); opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+    
+  <h1>Happy Diwali!</h1>
+  <p>✨ May this Festival of Lights sprinkle your life with joy, shower you with happiness, 
+    and light up your path to prosperity! Let’s celebrate with laughter, love, and maybe a few 
+    extra sweets—because who can resist those? Happy Diwali! 🎉.</p>
+
+  <script src="script.js"></script>
+</body>
+</html>
