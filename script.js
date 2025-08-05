@@ -5,7 +5,7 @@ function createFirework() {
     // Random position and size
     firework.style.left = Math.random() * 100 + "vw";
     firework.style.top = Math.random() * 100 + "vh";
-    firework.style.animationDuration = (Math.random() * 2 + 1) + "s";
+    firework.style.animationDuration = (Math.random() * 2 + 1) + "s"; 
 
     document.body.appendChild(firework);
 
@@ -24,3 +24,4 @@ function createFirework() {
 
 // Create fireworks every 300ms
 setInterval(createFirework, 300);
+
