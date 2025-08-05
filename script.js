@@ -7,7 +7,7 @@ function createFirework() {
     firework.style.top = Math.random() * 100 + "vh";
     firework.style.animationDuration = (Math.random() * 2 + 1) + "s"; 
 
-    document.body.appendChild(firework);
+    document.body.appendChild(firework); 
 
     // Explosion effect
     setTimeout(() => {
@@ -24,4 +24,5 @@ function createFirework() {
 
 // Create fireworks every 300ms
 setInterval(createFirework, 300);
+
 
